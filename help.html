@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora – Support Center</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-gray-950 text-white font-sans">
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 bg-gray-900 shadow-md">
+    <div class="flex items-center gap-2">
+      <i class="ph ph-sparkle text-purple-400 text-2xl"></i>
+      <span class="text-xl font-bold">Nexora Support</span>
+    </div>
+    <button id="menuBtn" class="md:hidden p-2">
+      <i class="ph ph-list text-2xl"></i>
+    </button>
+    <nav class="hidden md:flex gap-6">
+      <a href="#" class="hover:text-purple-400">Home</a>
+      <a href="#" class="hover:text-purple-400">Submit a Request</a>
+      <a href="#" class="hover:text-purple-400">Sign In</a>
+    </nav>
+  </header>
+
+  <!-- Sidebar Overlay -->
+  <div id="sidebar" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 z-50 hidden">
+    <div class="w-64 h-full bg-gray-900 shadow-lg p-6 relative">
+      <button id="closeSidebar" class="absolute top-4 right-4">
+        <i class="ph ph-x text-2xl"></i>
+      </button>
+      <nav class="flex flex-col gap-6 mt-12 text-lg">
+        <a href="#" class="hover:text-purple-400">Home</a>
+        <a href="#" class="hover:text-purple-400">Submit a Request</a>
+        <a href="#" class="hover:text-purple-400">Sign In</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero / Search -->
+  <section class="bg-gradient-to-r from-purple-900 to-pink-900 text-white py-16">
+    <div class="max-w-2xl mx-auto text-center px-6">
+      <h2 class="text-4xl font-bold mb-4">How can we help?</h2>
+      <div class="relative">
+        <input 
+          type="text" 
+          placeholder="Search for help articles..." 
+          class="w-full px-5 py-3 rounded-xl text-gray-900 focus:ring-2 focus:ring-purple-400 outline-none"
+        />
+        <button class="absolute right-3 top-2.5 text-gray-500 hover:text-purple-600">
+          <i class="ph ph-magnifying-glass text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Category 1 -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 class="text-lg font-semibold mb-3 text-purple-400">Getting Started</h3>
+      <ul class="space-y-2 text-gray-300">
+        <li><a href="#" class="hover:text-purple-400 hover:underline flex items-center gap-1"><i class="ph ph-arrow-right"></i> Creating a Nexora Account</a></li>
+        <li><a href="#" class="hover:text-purple-400 hover:underline flex items-center gap-1"><i class="ph ph-arrow-right"></i> Setting up your Profile</a></li>
+        <li><a href="#" class="hover:text-purple-400 hover:underline flex items-center gap-1"><i class="ph ph-arrow-right"></i> Adding Friends</a></li>
+        <li><a href="#" class="hover:text-purple-400 hover:underline flex items-center gap-1"><i class="ph ph-arrow-right"></i> Joining Groups</a></li>
+      </ul>
+    </div>
+
+    <!-- Category 2 -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 class="text-lg font-semibold mb-3 text-purple-400">Account & Billing</h3>
+      <ul class="space-y-2 text-gray-300">
+        <li><a href="#" class="hover:text-purple-400 hover:underline flex items-center gap-1"><i class="ph ph-arrow-right"></i> Resetting your Password</a></li>
+        <li><a href="#" class="hover:text-purple-400 hover:underline flex items-center gap-1"><i class="ph ph-arrow-right"></i> Managing Subscriptions</a></li>
+        <li><a href="#" class="hover:text-purple-400 hover:underline flex items-center gap-1"><i class="ph ph-arrow-right"></i> Refund Policy</a></li>
+        <li><a href="#" class="hover:text-purple-400 hover:underline flex items-center gap-1"><i class="ph ph-arrow-right"></i> Updating Payment Info</a></li>
+      </ul>
+    </div>
+
+    <!-- Category 3 -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 class="text-lg font-semibold mb-3 text-purple-400">Community & Safety</h3>
+      <ul class="space-y-2 text-gray-300">
+        <li><a href="#" class="hover:text-purple-400 hover:underline flex items-center gap-1"><i class="ph ph-arrow-right"></i> Reporting Users</a></li>
+        <li><a href="#" class="hover:text-purple-400 hover:underline flex items-center gap-1"><i class="ph ph-arrow-right"></i> Community Guidelines</a></li>
+        <li><a href="#" class="hover:text-purple-400 hover:underline flex items-center gap-1"><i class="ph ph-arrow-right"></i> Blocking & Privacy</a></li>
+        <li><a href="#" class="hover:text-purple-400 hover:underline flex items-center gap-1"><i class="ph ph-arrow-right"></i> Moderation Tools</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#0b0b10] border-t border-gray-800 py-10">
+    <div class="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-4 text-sm">
+      <div>
+        <h3 class="font-bold mb-3 text-white">Nexora</h3>
+        <p class="text-gray-400">Made for chilling with friends, gamers, and the occasional guy who breathes too hard into his mic.</p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-3 text-white">Product</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#" class="hover:text-white">Download</a></li>
+          <li><a href="#" class="hover:text-white">Open in Browser</a></li>
+          <li><a href="#" class="hover:text-white">Features</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-3 text-white">Company</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#" class="hover:text-white">About</a></li>
+          <li><a href="#" class="hover:text-white">Support</a></li>
+          <li><a href="#" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-3 text-white">Legal</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="privacypolicy.html" class="hover:text-white">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-10 text-center text-gray-600 text-xs">
+      © 2025 Nexora. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
